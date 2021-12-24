@@ -9,4 +9,12 @@ router.get("/", (req, res) => {
     res.status(200).send(result);
 });
 
+router.post("/post", (req, res) => {
+    const result = {
+        status: 200,
+        message: "포스팅 완료 ~",
+    };
+    res.status(200).send(result);
+});
+
 module.exports = router;
